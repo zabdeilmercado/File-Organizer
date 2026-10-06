@@ -1,0 +1,22 @@
+[project]
+name = "file-organizer-learning"
+version = "0.1.0"
+description = "Local file organization and recoverable duplicate cleanup"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-cov>=6,<8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+branch = true
+source = ["file_organizer"]
+omit = ["*/gui.py", "*/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80

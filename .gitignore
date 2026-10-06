@@ -1,0 +1,10 @@
+.venv/
+.data/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+docs/
+.file-organizer-quarantine/
+.file-organizer.lock
